@@ -1,0 +1,25 @@
+entries:
+  - title: ermand mani
+    entries:
+      - title: cyber security graduate, glasgow
+      - title: open to hire
+        url: mailto:hi@ermand.uk
+      - title: cv (pdf)
+        url: /assets/cv/ErmandMani_CV.pdf
+  - title: projects
+    post_list:
+      limit: 6
+  - title: pages
+    entries:
+      - title: about
+        url: /about.html
+      - title: cv
+        url: /cv.html
+      - title: contact
+        url: /contact.html
+  - title: external
+    entries:
+      - title: github
+        url: https://github.com/CodeEvent
+      - title: linkedin
+        url: https://linkedin.com/in/ermandmani
