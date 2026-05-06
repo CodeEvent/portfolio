@@ -12,23 +12,21 @@ COMP10014 Network Security at the University of the West of Scotland covered fiv
 
 ## Approach
 
-The labs followed a structured offensive-then-defensive methodology. Each exercise began with an attack or configuration challenge, followed by detection or hardening measures.
-
 ### ARP poisoning and MITM
 
-Using Ettercap to execute ARP poisoning against a target on the local network segment, intercepting HTTP traffic via tcpdump. Detection was handled by Arpwatch, which generated flip-flop alerts when MAC-to-IP bindings changed unexpectedly. This demonstrated how trivially Layer 2 trust can be abused on unsegmented networks.
+Using Ettercap to execute ARP poisoning against a target on the local network segment, intercepting HTTP traffic via tcpdump. Detection was handled by Arpwatch, which generated flip-flop alerts when MAC-to-IP bindings changed unexpectedly.
 
 ### Snort IDS deployment
 
-Deployed Snort with custom rule sets to detect specific attack signatures. Configured traffic mirroring via iptables TEE to redirect copies of live traffic to the Snort sensor, transitioning the deployment from a host-based IDS to a network-based IDS without altering the monitored hosts.
+Deployed Snort with custom rule sets to detect specific attack signatures. Configured traffic mirroring via iptables TEE to redirect copies of live traffic to the Snort sensor, transitioning the deployment from a host-based IDS to a network-based IDS.
 
 ### GRE tunnelling
 
-Configured Generic Routing Encapsulation tunnels using the Linux kernel and OpenVSwitch. Analysed Layer 2 and Layer 3 encapsulation behaviour in Wireshark to understand how tunnelled traffic traverses intermediate networks.
+Configured Generic Routing Encapsulation tunnels using the Linux kernel and OpenVSwitch. Analysed Layer 2 and Layer 3 encapsulation behaviour in Wireshark.
 
 ### OpenVPN PKI
 
-Deployed a full OpenVPN Public Key Infrastructure using EasyRSA. This included Certificate Authority creation, server and client certificate signing, Diffie-Hellman parameter generation, and secure credential transfer via SCP. The result was an encrypted tunnel with mutual authentication between endpoints.
+Deployed a full OpenVPN Public Key Infrastructure using EasyRSA. This included Certificate Authority creation, server and client certificate signing, Diffie-Hellman parameter generation, and secure credential transfer via SCP.
 
 ### FreeRADIUS AAA
 
@@ -38,8 +36,7 @@ Configured FreeRADIUS 3.0 as an Authentication, Authorisation, and Accounting se
 
 - Grade: A2, First-class band (80-89%)
 - Five distinct lab areas completed with full documentation
-- Each lab included working configurations, packet captures, and written analysis
 
 ## Tools
 
-Ettercap, tcpdump, Arpwatch, Snort IDS, iptables, OpenVSwitch, Wireshark, OpenVPN 2.4, EasyRSA, FreeRADIUS 3.0, SCP, Linux kernel networking.
+Ettercap, tcpdump, Arpwatch, Snort IDS, iptables, OpenVSwitch, Wireshark, OpenVPN 2.4, EasyRSA, FreeRADIUS 3.0.
