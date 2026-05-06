@@ -1,0 +1,14 @@
+title: Ermand Mani
+author: Ermand Mani
+email: hi@ermand.uk
+url: https://www.ermand.uk
+description: BEng Hons Cyber Security graduate. Blockchain security, pentesting, DFIR, network security, AppSec. Glasgow, UK.
+remote_theme: riggraz/no-style-please
+permalink: /:slug.html
+theme_config: appearance auto, lowercase_titles true, date_format %Y-%m-%d, show_description true
+plugins:
+  - jekyll-seo-tag
+  - jekyll-feed
+  - jekyll-remote-theme
+# twitter_username left blank
+# SEO defaults
